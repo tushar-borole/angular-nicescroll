@@ -9,7 +9,6 @@ This directive is for jquery-nicescroll in angular js whithout writing single li
 Getting Started
 -------------
 
-StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
 .
 
 ####  **bower install**
