@@ -29,6 +29,11 @@
 
                 }
             };
+            
+            
+            scope.$on('$destroy', function(){
+            niceScroll.remove()
+            })
 
 
         }
