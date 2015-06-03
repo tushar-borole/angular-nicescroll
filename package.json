@@ -1,0 +1,19 @@
+{
+  "name": "angular-nicescroll",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tushariscoolster/angular-nicescroll"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.1",
+    "grunt-bump": "0.0.16",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+  }
+}
