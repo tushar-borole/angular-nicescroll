@@ -33,7 +33,8 @@ Getting Started
 |                  | Option| 
  ----------------- | ---------------------------- | ------------------
 | nice-option | `'Any option given below'` 
-| nice-scroll-end| `"endScroll()  (function to be called)"`            
+| nice-scroll-end| `"endScroll()  (function to be called)"`
+| nice-scroll-top-end| `"topendScroll()  (function to be called)"` 
 | ng-nicescroll | `Initialize the directive` 
 
 

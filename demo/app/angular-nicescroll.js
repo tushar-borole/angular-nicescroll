@@ -29,10 +29,12 @@
 
                 }
             };
-            
-            
-            scope.$on('$destroy', function(){
-            niceScroll.remove()
+
+
+            scope.$on('$destroy', function () {
+                if (angular.isDefined(niceScroll)) {
+                    niceScroll.remove()
+                }
             })
 
 

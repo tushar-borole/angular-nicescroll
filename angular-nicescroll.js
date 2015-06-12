@@ -23,16 +23,24 @@
             var niceOption = scope.$eval(attrs.niceOption)
 
             var niceScroll = $(element).niceScroll(niceOption);
+
+            // on scroll end
             niceScroll.onscrollend = function (data) {
                 if (data.end.y >= this.page.maxh) {
                     if (attrs.niceScrollEnd) scope.$evalAsync(attrs.niceScrollEnd);
 
                 }
+                if (data.end.y <= 0) {
+                    // at top
+                    if (attrs.niceScrollTopEnd) scope.$evalAsync(attrs.niceScrollTopEnd);
+                }
             };
-            
-            
-            scope.$on('$destroy', function(){
-            niceScroll.remove()
+
+
+            scope.$on('$destroy', function () {
+                if (angular.isDefined(niceScroll)) {
+                    niceScroll.remove();
+                }
             })
 
 
