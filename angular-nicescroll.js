@@ -8,7 +8,7 @@
     ngNicescroll.$inject = ['$rootScope'];
 
     /* @ngInject */
-    function ngNicescroll($rootScope) {
+    function ngNicescroll($rootScope,$parse) {
         // Usage:
         //
         // Creates:
@@ -23,6 +23,9 @@
             var niceOption = scope.$eval(attrs.niceOption)
 
             var niceScroll = $(element).niceScroll(niceOption);
+            var nice = $(element).getNiceScroll();
+            
+            if (attrs.niceScrollObject)  $parse(attrs.niceScrollObject).assign(scope, nice);
 
             // on scroll end
             niceScroll.onscrollend = function (data) {
