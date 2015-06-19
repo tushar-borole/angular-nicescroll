@@ -24,7 +24,7 @@ Getting Started
     var app=angular.module("you app name",['angular-nicescroll'])
 ####  **Using directive**
 
-    <div class="my-scroll-area" ng-nicescroll nice-option="{cursorcolor: '#e2edff'}" nice-scroll-end="endScroll()">
+    <div class="my-scroll-area" ng-nicescroll nice-option="{cursorcolor: '#e2edff'}" nice-scroll-top-end="topEndComplete()" nice-scroll-end="endScroll()">
 
 
 ### Documentation
@@ -36,6 +36,7 @@ Getting Started
 | nice-scroll-end| `"endScroll()  (function to be called)"`
 | nice-scroll-top-end| `"topendScroll()  (function to be called)"` 
 | ng-nicescroll | `Initialize the directive` 
+| nice-scroll-object | `scopename` can be used for nicescroll event eg: scopename.hide();
 
 
     {
