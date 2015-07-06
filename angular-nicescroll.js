@@ -5,7 +5,7 @@
         .module('angular-nicescroll', [])
         .directive('ngNicescroll', ngNicescroll);
 
-    ngNicescroll.$inject = ['$rootScope'];
+    ngNicescroll.$inject = ['$rootScope','$parse'];
 
     /* @ngInject */
     function ngNicescroll($rootScope,$parse) {
@@ -26,7 +26,7 @@
             var nice = $(element).getNiceScroll();
             
             if (attrs.niceScrollObject)  $parse(attrs.niceScrollObject).assign(scope, nice);
-
+       
             // on scroll end
             niceScroll.onscrollend = function (data) {
                 if (data.end.y >= this.page.maxh) {
