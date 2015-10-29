@@ -41,7 +41,7 @@
 
 
             scope.$on('$destroy', function () {
-                if (angular.isDefined(niceScroll)) {
+                if (angular.isDefined(niceScroll.version)) {
                     niceScroll.remove();
                 }
             })
