@@ -24,7 +24,7 @@
 
             var niceScroll = $(element).niceScroll(niceOption);
             var nice = $(element).getNiceScroll();
-            
+          
             if (attrs.niceScrollObject)  $parse(attrs.niceScrollObject).assign(scope, nice);
        
             // on scroll end
