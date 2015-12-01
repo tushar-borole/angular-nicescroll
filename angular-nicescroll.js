@@ -29,7 +29,7 @@
        
             // on scroll end
             niceScroll.onscrollend = function (data) {
-                if (data.end.y >= this.page.maxh) {
+                if (this.newscrolly >= this.page.maxh) {
                     if (attrs.niceScrollEnd) scope.$evalAsync(attrs.niceScrollEnd);
 
                 }
