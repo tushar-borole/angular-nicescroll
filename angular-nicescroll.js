@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 //change
+    
+    //test
     angular
         .module('angular-nicescroll', [])
         .directive('ngNicescroll', ngNicescroll);
