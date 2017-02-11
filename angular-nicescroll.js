@@ -20,7 +20,9 @@
         };
         return directive;
 
-// another change PMK
+
+        //Gandu  
+
 
         function link(scope, element, attrs, controller) {
 
@@ -28,9 +30,9 @@
 
             var niceScroll = $(element).niceScroll(niceOption);
             var nice = $(element).getNiceScroll();
-          
+
             if (attrs.niceScrollObject)  $parse(attrs.niceScrollObject).assign(scope, nice);
-       
+
             // on scroll end
             niceScroll.onscrollend = function (data) {
                 if (this.newscrolly >= this.page.maxh) {
