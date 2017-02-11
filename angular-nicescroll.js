@@ -18,15 +18,17 @@
         };
         return directive;
 
+        //Gandu  
+
         function link(scope, element, attrs, controller) {
 
             var niceOption = scope.$eval(attrs.niceOption)
 
             var niceScroll = $(element).niceScroll(niceOption);
             var nice = $(element).getNiceScroll();
-          
+
             if (attrs.niceScrollObject)  $parse(attrs.niceScrollObject).assign(scope, nice);
-       
+
             // on scroll end
             niceScroll.onscrollend = function (data) {
                 if (this.newscrolly >= this.page.maxh) {
