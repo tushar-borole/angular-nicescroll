@@ -1,6 +1,8 @@
 (function () {
     'use strict';
-
+//change
+    
+    //test
     angular
         .module('angular-nicescroll', [])
         .directive('ngNicescroll', ngNicescroll);
@@ -18,7 +20,9 @@
         };
         return directive;
 
+
         //Gandu  
+
 
         function link(scope, element, attrs, controller) {
 
