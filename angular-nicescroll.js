@@ -39,7 +39,7 @@
                     if (attrs.niceScrollEnd) scope.$evalAsync(attrs.niceScrollEnd);
 
                 }
-                if (data.end.y <= 0) {
+                if (this.newscrolly === 0) {
                     // at top
                     if (attrs.niceScrollTopEnd) scope.$evalAsync(attrs.niceScrollTopEnd);
                 }
